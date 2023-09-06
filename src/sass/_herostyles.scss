@@ -1,4 +1,3 @@
-
 .container {
     width: 375px;
     margin: 0 auto;
@@ -10,15 +9,13 @@
             padding: 0 32px;
         }
     
-    @media screen and (min-width: 1440px) {
-            width: 1440px;
-            padding: 0 132px;
-    
+    @media screen and (min-width: 1280px) {
+            width: 1280px;
+            padding: 0 20px;
+
         }   
     
 }
-
-
 
 .hp-hero-banner {
     background-color: #141414;
@@ -28,18 +25,24 @@
 
 }
 
-
-
 .hero-container {
-    display: block;
+    display: inline-flex;
+    row-gap: 40px;
     background-color: #141414;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 40px 20px;
 
-    /* @media screen and (min-width: 768px) {
-        display: flex;
-        
-    } */
+    @media screen and (min-width: 768px) {
+        align-items: center;
+        padding: 64px 32px; 
+    }
+
+    @media screen and (min-width: 1280px) {
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 80px 20px;   
+    }
 
 }
 
@@ -51,8 +54,7 @@
     font-weight: 600;
     line-height: 40px;
     letter-spacing: -1.52px;
-    margin-top: 69px;
-    margin-bottom: 65px;
+    margin-bottom: 20px;
     width: unset;
 
     @media screen and (min-width: 768px) {
@@ -63,33 +65,34 @@
         font-weight: 600;
         line-height: 62px; 
         letter-spacing: -2.4px;
-        margin-bottom: 60px;;
+        margin-bottom: 60px;
 
-        
     }
-
 
     @media screen and (min-width: 1280px) {
         font-size: 60px;
         font-weight: 600;
         line-height: 62px;
         letter-spacing: -2.4px;
-        margin-right: 144px;
+        margin-top: 0;
+        margin-bottom: 0;
         width: 750px;
-        
-        
+        order: 1;       
     }
 }
 
-
-
 /* Start of Slider */
-
 .hp-slider-img{
     width: 266px;
 
     @media screen and (min-width: 768px) {
         width: 436px;
+        
+    }
+
+    @media screen and (min-width: 1280px){
+        order: 3;
+        align-self: flex-end;
         
     }
 
@@ -99,40 +102,20 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    
-}
-
-
-/* maybe? */
-.watchphoto{
-    width: auto;
-
-    /* @media screen and (min-width: 768px) {
-        background-image: url(../images/watch1_tablet.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: auto;
-        width: 348px;
-        height: 233px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        
-    } */
 }
 
 swiper-slide{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 200px;
 
     @media screen and (min-width: 768px) {
-        padding: 11px 44px;
         background-color: #1e2827;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 255px;
 
     }
 }
@@ -224,10 +207,18 @@ swiper-slide{
 /** End Slider **/
 
 .herotext-box{
-    padding: 40px 0;
+    width: 282px;
+    margin-left: auto;
 
-    @media screen and (min-width: 768) {
-        padding: 130px 32px 177px 20px;
+    @media screen and (min-width: 768px) {
+        width: 248px;
+        margin-top: -40px;
+        
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 0;
+        order: 2;
         
     }
 }
@@ -236,40 +227,23 @@ swiper-slide{
     font-size: 14px;
     font-weight: 300;
     line-height: 18px;
+    color: #FFF;
     
 }
 
 .hero-text {
-    max-width: 282px;
+    
     color: #fff;
     font-weight: 300;
     display: inline-flex;
 
-    @media screen and (max-width: 767px) {
-        display: none;
-        
-    }
-}
-
-.herotext-hidden{
-    display: none;
-
-    @media screen and (max-width: 767px) {
-        display: block;
-        color:#fff;
-        padding-left: 107px;
-    
-        
+    @media screen and (min-width: 768px) { 
     }
 }
 
 .hero-watch-div{
-    padding-bottom: 40px;
+    order: 4;
 
-    @media screen and (min-width: 768px) {
-        padding-bottom: 64px;
-        
-    }
 }
 
 .hero-wristwatch{
@@ -280,14 +254,279 @@ swiper-slide{
         height: 410px;
         background: url(../images/hero-wristwatch-tablet.jpg);
         background-position: center;
-        background-size: cover; 
+        background-size: cover;
         
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 678px;
+        height: 394px;  
     }
 }
 
 
+.container {
+    width: 375px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
 
+    @media screen and (min-width: 768px) {
+            width: 768px;  
+            padding: 0 32px;
+        }
+    
+    @media screen and (min-width: 1280px) {
+            width: 1280px;
+            padding: 0 20px;
 
+        }   
+    
+}
 
+.hp-hero-banner {
+    background-color: #141414;
+    width: 100%;
+    display: flex;
+    gap: 144px;
 
+}
 
+.hero-container {
+    display: inline-flex;
+    row-gap: 40px;
+    background-color: #141414;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 40px 20px;
+
+    @media screen and (min-width: 768px) {
+        align-items: center;
+        padding: 64px 32px; 
+    }
+
+    @media screen and (min-width: 1280px) {
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 80px 20px;   
+    }
+
+}
+
+.hero-title {
+    color: #FFF;
+    font-family: Epilogue;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -1.52px;
+    margin-bottom: 20px;
+    width: unset;
+
+    @media screen and (min-width: 768px) {
+        color: #FFF;
+        font-family: Epilogue;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 62px; 
+        letter-spacing: -2.4px;
+        margin-bottom: 60px;
+
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 62px;
+        letter-spacing: -2.4px;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 750px;
+        order: 1;       
+    }
+}
+
+/* Start of Slider */
+.hp-slider-img{
+    width: 266px;
+
+    @media screen and (min-width: 768px) {
+        width: 436px;
+        
+    }
+
+    @media screen and (min-width: 1280px){
+        order: 3;
+        align-self: flex-end;
+        
+    }
+
+}
+
+.banner-slider{ 
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+    @media screen and (min-width: 768px) {
+        background-color: #1e2827;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 255px;
+
+    }
+}
+
+.slide-control {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 32px;
+
+}
+
+.button-list{
+    display: inline-flex;
+    gap: 12px;
+}
+
+.counter-list{
+    display: inline-flex;
+    color:#fff;
+    gap: 6px;
+
+}
+
+.slider-range{
+    position: relative;
+    width: 40px;
+    height: 100%;
+}
+
+.slider-range::before{
+    content: "";
+    position: absolute;
+    top: 7px;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;  
+}
+
+.control_prev:hover, .control_next:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+}
+
+.control_prev {
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    background: #ffffff00;
+    color: #fff;
+    fill: #FFF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    display: block;
+}
+
+.chevronleft .chevronright {
+    fill: #FFF;
+}
+
+.control_next {
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    background: #ffffff00;
+    color: #fff;
+    fill: #FFF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    display: block;
+}
+
+.slider_option {
+    position: relative;
+    margin: 10px auto;
+    width: 160px;
+    font-size: 18px;
+}
+
+/** End Slider **/
+
+.herotext-box{
+    width: 282px;
+    margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+        width: 248px;
+        margin-top: -40px;
+        
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 0;
+        order: 2;
+        
+    }
+}
+
+.herotext{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    color: #FFF;
+    
+}
+
+.hero-text {
+    
+    color: #fff;
+    font-weight: 300;
+    display: inline-flex;
+
+    @media screen and (min-width: 768px) { 
+    }
+}
+
+.hero-watch-div{
+    order: 4;
+
+}
+
+.hero-wristwatch{
+    width: auto;
+
+    @media screen and (min-width: 768px){
+        width: 704px;
+        height: 410px;
+        background: url(../images/hero-wristwatch-tablet.jpg);
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 678px;
+        height: 394px;  
+    }
+}
