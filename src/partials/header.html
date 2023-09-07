@@ -26,10 +26,40 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div class="hamburger-container" hamburger-menu-open>
+    <div class="hamburger-container" burger-modal-open>
       <svg class="hamburger-menu-icon" width="24" height="24">
         <use href="./images/icons.svg#hamburger-menu"></use>
       </svg>
     </div>
   </div>
 </section>
+
+<!-- Hamburger menu -->
+<div class="hamburger is-hidden" burger-modal>
+  <div class="hamburger-modal">
+    <div class="menu-burger-container">
+      <div class="logo-container">
+        <svg class="header-logo">
+          <use href="./images/icons.svg#logo"></use>
+        </svg>
+      </div>
+      <svg
+        class="hamburger-close-icon"
+        width="24"
+        height="24"
+        burger-modal-close
+      >
+        <use href="./images/icons.svg#hamburger-close"></use>
+      </svg>
+    </div>
+    <div class="hamburger-menu-link">
+      <ul class="hamburger-menu-list list">
+        <li>
+          <a href="#about" class="hamburger_link">ABOUT US</a>
+        </li>
+        <li><a href="#catalog" class="hamburger_link">CATALOG</a></li>
+        <li><a href="#sale" class="hamburger_link">SALE</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
