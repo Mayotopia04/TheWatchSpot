@@ -18,4 +18,4 @@
         });
         swiperEl.addEventListener('slidechange', (event) => {
             byNumber.innerHTML = '0'+(swiperEl.swiper.activeIndex+1);
-        });
+        }); 
