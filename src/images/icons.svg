@@ -9,13 +9,13 @@
 </symbol>
 
 <!-- arrow right -->
-<symbol id="chevron-right" viewBox="0 0 24 24">
-<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M12 24l8-8-8-8"></path>
+<symbol id="chevron-right" viewBox="0 0 18 32">
+<path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M12 24l8-8-8-8"></path>
 </symbol>
 
-<!-- arror left -->
-<symbol id="chevron-left" viewBox="0 0 24 24">
-<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M20 24l-8-8 8-8"></path>
+<!-- arrow left -->
+<symbol id="chevron-left" viewBox="0 0 18 32">
+<path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M20 24l-8-8 8-8"></path>
 </symbol>
 
 
@@ -31,6 +31,7 @@
 
 <!-- arrow left -->
 <symbol id="icon-chevron-left" viewBox="0 0 32 32">
+
 <path d="M20 24l-8-8 8-8"></path>
 </symbol>
 
