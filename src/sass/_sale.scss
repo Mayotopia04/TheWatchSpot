@@ -1,3 +1,8 @@
+.sale-section {
+  width: 100%;
+  padding: 0 0 80px 0;
+}
+
 .sale-description {
   color: rgba(20, 20, 20, 0.5);
   font-family: Epilogue;
@@ -35,19 +40,6 @@
   margin-bottom: 10px;
 }
 
-.container {
-  margin: 0 auto;
-  width: 335px;
-
-  @media screen and (min-width: 768px) {
-    width: 574px;
-  }
-
-  @media screen and (min-width: 1158px) {
-    width: 1081px;
-  }
-}
-
 .sale-heading {
   color: var(--black, #141414);
   font-family: Epilogue;
@@ -77,7 +69,7 @@
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
-    color: var(--dark-green, #1e2827);
+    color: var(--dark-green);
     font-size: 40px;
     line-height: 44px;
     letter-spacing: -0.8px;
@@ -107,12 +99,6 @@
   display: flex;
 }
 
-.list {
-  margin: 0px;
-  padding: 0px;
-  height: 351px;
-}
-
 @media screen and (min-width: 768px) {
   .sale-watch {
     width: 146px;
@@ -123,7 +109,6 @@
 .preview-wrapper {
   width: 235px;
   height: 350px;
-
   margin-bottom: 0px;
   padding-bottom: 0px;
   margin-left: 20px;
@@ -296,6 +281,14 @@
   display: flex;
   align-items: center;
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    width: 572px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    width: 369px;
+  }
 }
 
 .sale-details-title::after {
@@ -311,9 +304,20 @@
   .sale-details-title::after {
     left: 556px;
   }
+
+  @media screen and (min-width: 1158px) {
+    .sale-details-title::after {
+      left: 353px;
+    }
+  }
 }
-@media screen and (min-width: 1158px) {
-  .sale-details-title::after {
-    left: 353px;
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+
+  .hero-section {
+    padding: 40px 0;
   }
 }
