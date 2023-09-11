@@ -120,7 +120,8 @@
 }
 .catalog-cover-text {
   position: absolute;
-  top: 0;
+  background-color: var(--dark-green);
+  top: 1;
   background-color: var(--dark-green);
   border-radius: 8px;
   transform: translateY(100%);
@@ -138,7 +139,6 @@
   margin-bottom: 10px;
   line-height: 18px;
   letter-spacing: -0.28px;
-  margin-top: 20px;
 }
 
 .catalog-cover-text-body {
@@ -292,7 +292,7 @@
 
 .button.button-submit {
   width: 100%;
-  background-color: var(--darkgreen);
+  background-color: var(--dark-green);
   padding: 18px 0px;
   color: var(--white);
   border-radius: 8px;
@@ -300,14 +300,12 @@
   border: 1px solid transparent;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.button-submit:hover,
 .button.button-submit:focus {
   border-color: var(--white);
-  border: 1px solid var(--metallicgrey);
   background-color: rgba(30, 40, 39, 0.8);
 }
 
