@@ -13,7 +13,7 @@
   }
 })();
 
-// sale function
+// sale js
 function displayImage(imageSrc) {
   var imageContainer = document.getElementById('imagecontainer');
   // Create a new image element
