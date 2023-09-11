@@ -1,0 +1,67 @@
+<section class="header">
+  <div class="container header-container">
+    <nav class="header-navigation">
+      <div class="logo-container">
+        <svg class="header-logo">
+          <use href="./images/icons.svg#logo"></use>
+        </svg>
+      </div>
+
+      <ul class="header-navigation-list list">
+        <li>
+          <a href="#about" class="header-navigation-link">About Us</a>
+        </li>
+        <li>
+          <a href="#catalog" class="header-navigation-link">Catalog</a>
+        </li>
+        <li>
+          <a href="#sale" class="header-navigation-link">Sale</a>
+        </li>
+      </ul>
+    </nav>
+    <div>
+      <button type="button" class="header-button button">
+        +380 (68) 443-94-26
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="hamburger-container" burger-modal-open>
+      <svg class="hamburger-menu-icon" width="24" height="24">
+        <use href="./images/icons.svg#hamburger-menu"></use>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- Hamburger menu -->
+<div class="hamburger is-hidden" burger-modal>
+  <div class="hamburger-modal">
+    <div class="menu-burger-container">
+      <div class="logo-container">
+        <svg class="header-logo">
+          <use href="./images/icons.svg#logo"></use>
+        </svg>
+      </div>
+      <svg
+        class="hamburger-close-icon"
+        width="24"
+        height="24"
+        burger-modal-close
+      >
+        <use href="./images/icons.svg#hamburger-close"></use>
+      </svg>
+    </div>
+    <div class="hamburger-menu-link">
+      <ul class="hamburger-menu-list list">
+        <li>
+          <a href="./index.html#about" class="hamburger_link">ABOUT US</a>
+        </li>
+        <li>
+          <a href="./index.html#catalog" class="hamburger_link">CATALOG</a>
+        </li>
+        <li><a href="./index.html#sale" class="hamburger_link">SALE</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
