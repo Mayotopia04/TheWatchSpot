@@ -5,7 +5,7 @@
 
 .sale-description {
   color: rgba(20, 20, 20, 0.5);
-  font-family: Epilogue;
+  font-family: 'Epilogue';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -17,7 +17,7 @@
 
 .sale-description-details {
   color: rgba(20, 20, 20, 0.5);
-  font-family: Epilogue;
+  font-family: 'Epilogue';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -42,7 +42,7 @@
 
 .sale-heading {
   color: var(--black, #141414);
-  font-family: Epilogue;
+  font-family: 'Epilogue';
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
@@ -51,7 +51,7 @@
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
-    color: var(--dark-green, #1e2827);
+    color: var(--dark-green);
     font-size: 40px;
     line-height: 44px;
     letter-spacing: -0.8px;
@@ -59,7 +59,7 @@
 }
 
 .sale-heading {
-  color: var(--black, #141414);
+  color: var(--black);
   font-family: Epilogue;
   font-size: 32px;
   font-style: normal;
@@ -116,7 +116,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #141414;
+  background-color: var(--black);
 }
 
 #imagecontainer {
@@ -136,7 +136,6 @@
   .preview-wrapper {
     width: 406px;
     height: 614px;
-
     margin-bottom: 0px;
     padding-bottom: 0px;
     margin-left: 20px;
@@ -144,7 +143,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #141414;
+    background-color: var(--black);
   }
 
   #imagecontainer {
@@ -192,7 +191,7 @@
 }
 
 .sale-details-heading {
-  color: var(--black, #141414);
+  color: var(--black);
   font-family: Epilogue;
   font-size: 24px;
   font-style: normal;
@@ -233,7 +232,7 @@
 
 .sale-product-tag {
   color: rgba(20, 20, 20, 0.5);
-  font-family: Epilogue;
+  font-family: 'Epilogue';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -243,8 +242,8 @@
 }
 
 .current-price-on-sale {
-  color: var(--black, #141414);
-  font-family: Epilogue;
+  color: var(--black);
+  font-family: 'Epilogue';
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -255,7 +254,7 @@
 
 .actual-price {
   color: rgba(20, 20, 20, 0.5);
-  font-family: Epilogue;
+  font-family: 'Epilogue';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -266,8 +265,8 @@
 }
 
 .sale-details-title {
-  color: var(--black, #141414);
-  font-family: Epilogue;
+  color: var(--black);
+  font-family: 'Epilogue';
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -277,7 +276,7 @@
   padding-top: 8px;
   padding-bottom: 8px;
   margin: 0 auto;
-  border-top: 1px solid var(--black, #141414);
+  border-top: 1px solid var(--black);
   display: flex;
   align-items: center;
   position: relative;
@@ -295,7 +294,7 @@
   content: '';
   width: 16px;
   height: 2px;
-  background-color: #141414;
+  background-color: var(--black);
   position: absolute;
   left: 319px;
 }
