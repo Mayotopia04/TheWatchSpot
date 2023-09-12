@@ -1,8 +1,7 @@
-.sale-section{
-      width: 100%;
-      padding: 0 0 80px 0;
+.sale-section {
+  width: 100%;
+  padding: 0 0 80px 0;
 }
-
 
 .sale-description {
   color: rgba(20, 20, 20, 0.5);
@@ -10,28 +9,27 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; 
+  line-height: 18px;
   letter-spacing: -0.14px;
   margin-top: 9px;
   margin: 0 auto;
 }
 
-.sale-description-details{
+.sale-description-details {
   color: rgba(20, 20, 20, 0.5);
   font-family: Epilogue;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; 
+  line-height: 18px;
   letter-spacing: -0.14px;
   margin-top: 9px;
-  margin: 0 auto;    
+  margin: 0 auto;
 }
 
 .sale-watch:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 
 .watch-items {
   list-style: none;
@@ -41,7 +39,6 @@
 .watch-items:not(:last-child) {
   margin-bottom: 10px;
 }
-
 
 .sale-heading {
   color: var(--black, #141414);
@@ -101,7 +98,6 @@
 .wrapper {
   display: flex;
 }
-
 
 @media screen and (min-width: 768px) {
   .sale-watch {
@@ -180,13 +176,11 @@
 }
 
 .sale-info-container {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
   width: 335px;
-  
 
   @media screen and (min-width: 768px) {
-    
     padding: 0px;
     margin: 0px;
     width: 572px;
@@ -194,7 +188,6 @@
 
   @media screen and (min-width: 1158px) {
     width: 369px;
-    
   }
 }
 
@@ -206,7 +199,7 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.48px;
- 
+
   margin-bottom: 0px;
 
   @media screen and (min-width: 768px) {
@@ -299,7 +292,7 @@
 }
 
 .sale-details-title::after {
-  content: "";
+  content: '';
   width: 16px;
   height: 2px;
   background-color: #141414;
@@ -313,12 +306,11 @@
   }
 
   @media screen and (min-width: 1158px) {
-  .sale-details-title::after {
-    left: 353px;
+    .sale-details-title::after {
+      left: 353px;
+    }
   }
 }
-}
-
 
 @media screen and (max-width: 767px) {
   .container {
