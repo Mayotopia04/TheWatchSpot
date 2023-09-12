@@ -165,6 +165,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  z-index: 9999;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -176,8 +177,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 904px;
-  min-height: 694px;
+  width: 904px;
+  height: 694px;
   background-color: var(--white);
   border-radius: 8px;
   display: flex;
@@ -335,6 +336,10 @@
   .catalog {
     margin-bottom: 40px;
   }
+
+  .catalog-modal{
+    width: 744px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -349,4 +354,30 @@
   .catalog-title {
     font-size: 32px;
   }
+
+  .catalog-modal {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 95vh;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .form-modal-container{
+    height: unset;
+  }
+
+  .product-modal-image{
+    width: 100%;
+    height: fit-content;
+  }
+
+    .catalog-image{
+      margin-top: 0;
+    }
+
+    .submit-note br{
+      display: none;
+    }
 }
