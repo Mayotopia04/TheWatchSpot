@@ -1,14 +1,16 @@
 (() => {
-  const refs = {
-    openModalBtn: document.querySelector('[burger-modal-open]'),
-    closeModalBtn: document.querySelector('[burger-modal-close]'),
-    modal: document.querySelector('[burger-modal]'),
-  };
+    const refsMenu = {
+      openModalBtn: document.querySelector("[burger-modal-open]"),
+      closeModalBtn: document.querySelector("[burger-modal-close]"),
+      navModalBtn: document.querySelector("[hamburger-nav-close]"),
+      modal: document.querySelector("[burger-modal]"),
+    };
+  
+    refsMenu.openModalBtn.addEventListener("click", toggleModal);
+    refsMenu.closeModalBtn.addEventListener("click", toggleModal);
+    refsMenu.navModalBtn.addEventListener("click", toggleModal);
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-})();
+    function toggleModal() {
+      refsMenu.modal.classList.toggle("is-hidden");
+    }
+  })();
