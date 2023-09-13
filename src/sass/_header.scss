@@ -50,6 +50,12 @@
     font-weight: 400;
     line-height: 12px;
     text-transform: uppercase;
+
+    transition: transform 250ms ease-in-out;
+}
+
+.header-navigation-link:hover{
+    transform: scale(1.2);
 }
 
 .header-button{
@@ -65,6 +71,13 @@
     border-radius: 8px;
     background-color: var(--dark-green);
     border: none;
+
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.header-button:hover{
+    background-color: var(--white);
+    color: var(--dark-green);
 }
 
 .hamburger-container{

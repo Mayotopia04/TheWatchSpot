@@ -70,11 +70,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
+    transition: background-color 250ms ease-in-out;
+}
+
+.footer-social-item:hover{
+    background-color: var(--light-green);
 }
 
 .footer-social-icon{
     fill: var(--white);
+    display: flex;
+}
+
+.footer-social-icon:hover {
+    fill: var(--dark-green);
 }
 
 .lower-text{
