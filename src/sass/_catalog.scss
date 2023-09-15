@@ -189,6 +189,20 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    width: 904px;
+    height: 694px;
+    top: 50%;
+    left: 50%;
+  }
+
+  @media screen and (min-width: 1158px) {
+    width: 904px;
+    height: 694px;
+    top: 50%;
+    left: 50%;
+  }
 }
 
 .catalog-close {
@@ -251,7 +265,7 @@
 
 .form-modal-container {
   width: 100%;
-  height: 100;
+  height: 100%;
 }
 
 /*modal-forms*/
