@@ -1,0 +1,150 @@
+:root {
+    --white: #ffffff;
+    --black: #141414;
+    --dark-green: #1E2827;
+    --light-green: #C6CDD1;
+    --gray: rgba(20, 20, 20, 0.50);
+    --light-gray: rgba(20, 20, 20, 0.40);
+    --border: rgba(255, 255, 255, 0.10);
+}
+
+.footer{
+    padding: 104px 0 32px;
+    background: var(--dark-green);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lower-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 174px;
+}
+
+.footer-navigation{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-logo-container{
+    margin-bottom: 40px;
+}
+
+.footer-address-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-navigation-list{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-navigation-link{
+    color: var(--white);
+    font-family: 'Epilogue';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.footer-social-list{
+    display: flex;
+    gap: 16px;
+    justify-content: flex-start;
+}
+
+.footer-social-item{
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 250ms ease-in-out;
+}
+
+.footer-social-item:hover{
+    background-color: var(--light-green);
+}
+
+.footer-social-icon{
+    fill: var(--white);
+    display: flex;
+}
+
+.footer-social-icon:hover {
+    fill: var(--dark-green);
+}
+
+.lower-text{
+    color: var(--light-green);
+    font-family: 'Epilogue';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+
+.lower-footer-link{
+    color: var(--light-green);
+    text-align: right;
+    font-family: 'Epilogue';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+
+.footer-container-5{
+    display: flex;
+    gap: 18px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer-container{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+
+    .lower-container{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .footer-container-1{
+        width: 80%;
+    }
+
+    .footer-container-2{
+        width: 20%;
+        justify-content: flex-end;
+    }
+
+    .footer-navigation-link{
+        font-size: 14px;
+    }
+
+    .lower-text, .lower-footer-link{
+        font-size: 12px;
+    }
+}

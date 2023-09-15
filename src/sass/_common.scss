@@ -30,8 +30,14 @@ html {
     box-sizing: inherit;
 }
 
+a{
+    text-decoration: none;
+}
+
 .list {
-    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -44,3 +50,27 @@ body {
     margin: 0;
 }
 
+.section{
+    width: 100%;
+    margin: auto;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+@media screen and (max-width: 1176px){
+    .container {
+        width: 768px;
+        padding: 0 32px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+}
