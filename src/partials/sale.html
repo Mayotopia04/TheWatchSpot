@@ -1,7 +1,7 @@
 <section class="section sale-section" id="sale">
   <div class="container">
     <h2 class="sale-heading">Sale</h2>
-    <div class="sale-column">
+    <div class="item-wrapper">
       <div class="wrapper">
         <ul class="sale-watch-container list">
           <li class="watch-items">
@@ -9,7 +9,9 @@
               class="sale-watch"
               src="./images/sale-watch1x2.png"
               alt="sale-watch-preview1"
-              onclick="displayImage('./images/sale-watch5x2.png')"
+              width="80"
+              height="80"
+              onclick="displayImage(0)"
             />
           </li>
           <li class="watch-items">
@@ -17,7 +19,9 @@
               class="sale-watch"
               src="./images/sale-watch2x2.png"
               alt="sale-watch-preview2"
-              onclick="displayImage('./images/sale-watch2x3.png')"
+              width="80"
+              height="80"
+              onclick="displayImage(1)"
             />
           </li>
           <li class="watch-items">
@@ -25,7 +29,9 @@
               class="sale-watch"
               src="./images/sale-watch3x3.png"
               alt="sale-watch-preview3"
-              onclick="displayImage('./images/sale-watch3x4.png')"
+              width="80"
+              height="80"
+              onclick="displayImage(2)"
             />
           </li>
           <li class="watch-items">
@@ -33,22 +39,44 @@
               class="sale-watch"
               src="./images/sale-watch4x2.png"
               alt="sale-watch-preview4"
-              onclick="displayImage('./images/sale-watch4x4.png')"
+              width="80"
+              height="80"
+              onclick="displayImage(3)"
             />
           </li>
         </ul>
 
         <div class="preview-wrapper" id="imagecontainer">
           <img
-            class="sale-watch-preview"
+            class="sale-watch-preview activeimage imageselected-1" 
             src="./images/sale-watch5x2.png"
             alt="watch preview"
+            
+            
           />
+          <img
+            class="sale-watch-preview imageselected-2"
+            src="./images/sale-watch2x4.png"
+            alt="watch preview"
+            
+          />
+          <img
+            class="sale-watch-preview imageselected-3"
+            src="./images/sale-watch3x4.png"
+            alt="watch preview"
+            
+          />
+          <img
+            class="sale-watch-preview imageselected-4"
+            src="./images/sale-watch4x4.png"
+            alt="watch preview"
+            
+          />
+
         </div>
       </div>
-
       <div class="sale-info-container">
-        <div class="sale-details">
+        <div class="sale-details margin-container">
           <h3 class="sale-details-heading">
             Greenlane Watch By Police For MenHT
           </h3>
@@ -57,8 +85,8 @@
             &euro;700<span class="actual-price">&euro;1000</span>
           </p>
         </div>
-        <div class="sale-details-2">
-          <h5 class="sale-details-title">Description</h5>
+        <div class="margin-container">
+          <p class="sale-details-title">Description</p>
           <p class="sale-description-details">
             Richly detailed with an understated design - the Police Men&rsquo;s
             Greenlane watch features a versatile multifunction design that fits
@@ -67,8 +95,8 @@
             through a black IP bracelet with matching crown and pushers.
           </p>
         </div>
-        <div class="sale-details-3">
-          <h5 class="sale-details-title">DETAILS & FEATURES</h5>
+        <div class="margin-container">
+          <p class="sale-details-title">DETAILS & FEATUREStion</p>
           <p class="sale-description">
             Gender: man <br />
             Size: 46x54.5mm <br />

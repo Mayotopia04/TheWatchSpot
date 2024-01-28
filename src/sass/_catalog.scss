@@ -120,8 +120,7 @@
 }
 .catalog-cover-text {
   position: absolute;
-  background-color: var(--dark-green);
-  top: 1;
+  top: 0;
   background-color: var(--dark-green);
   border-radius: 8px;
   transform: translateY(100%);
@@ -139,6 +138,7 @@
   margin-bottom: 10px;
   line-height: 18px;
   letter-spacing: -0.28px;
+  margin-top: 20px;
 }
 
 .catalog-cover-text-body {
@@ -148,7 +148,7 @@
   color: rgba(255, 255, 255, 0.5);
   line-height: 18px;
   letter-spacing: -0.14px;
-  margin-top: 20px;
+  // margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -165,7 +165,6 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  z-index: 9999;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -177,32 +176,17 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 904px;
-  height: 694px;
+  min-width: 904px;
+  min-height: 694px;
   background-color: var(--white);
   border-radius: 8px;
   display: flex;
   flex-direction: row;
   gap: 40px;
   padding: 40px;
-  overflow-y: auto;
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media screen and (min-width: 768px) {
-    width: 904px;
-    height: 694px;
-    top: 50%;
-    left: 50%;
-  }
-
-  @media screen and (min-width: 1158px) {
-    width: 904px;
-    height: 694px;
-    top: 50%;
-    left: 50%;
-  }
 }
 
 .catalog-close {
@@ -216,7 +200,7 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
-  background-color: transparent;
+  background-color: lightgrey;
   border: 1px solid transparent;
 
   transform: rotate(0deg);
@@ -265,14 +249,14 @@
 
 .form-modal-container {
   width: 100%;
-  height: 100%;
+  height: 100;
 }
 
 /*modal-forms*/
 
 .form-field {
   display: flex;
-  position: relative;
+  position: rel ative;
   flex-direction: column;
 }
 
@@ -308,7 +292,7 @@
 
 .button.button-submit {
   width: 100%;
-  background-color: var(--dark-green);
+  background-color: var(--darkgreen);
   padding: 18px 0px;
   color: var(--white);
   border-radius: 8px;
@@ -316,12 +300,14 @@
   border: 1px solid transparent;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.button-submit:hover,
 .button.button-submit:focus {
   border-color: var(--white);
+  border: 1px solid var(--metallicgrey);
   background-color: rgba(30, 40, 39, 0.8);
 }
 
@@ -351,10 +337,6 @@
   .catalog {
     margin-bottom: 40px;
   }
-
-  .catalog-modal{
-    width: 744px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -369,30 +351,4 @@
   .catalog-title {
     font-size: 32px;
   }
-
-  .catalog-modal {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    height: 95vh;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .form-modal-container{
-    height: unset;
-  }
-
-  .product-modal-image{
-    width: 100%;
-    height: fit-content;
-  }
-
-    .catalog-image{
-      margin-top: 0;
-    }
-
-    .submit-note br{
-      display: none;
-    }
 }

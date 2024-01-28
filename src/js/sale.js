@@ -1,11 +1,25 @@
 function displayImage(imageSrc) {
-  var imageContainer = document.getElementById('imagecontainer');
+  const imageContainer = document.getElementById('imagecontainer');
+  const imageElements = document.querySelectorAll('.sale-watch-preview');
+  // const imageSelected = document.querySelector(`.imageselected-${imageSrc}`);
+  
+  // const imageActive = document.querySelector('.activeimage');
+
+
+
   // Create a new image element
-  var img = document.createElement('img');
-  img.src = imageSrc;
-  img.alt = 'Selected Image';
+  imageElements.forEach(element => {
+    element.classList.remove('activeimage');
+  });
+  imageElements[imageSrc].classList.add('activeimage');
+
+
+  // imageActive.classList.remove('activeimage');
+  // imageSelected.classList.toggle('activeimage');
+  
+  
   // Clear the contents of the image container
-  imageContainer.innerHTML = '';
+  
   // Append the selected image to the container
-  imageContainer.appendChild(img);
+  
 }

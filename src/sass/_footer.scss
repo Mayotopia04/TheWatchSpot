@@ -21,7 +21,7 @@
 .lower-container{
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 174px;
 }
 
 .footer-navigation{
@@ -64,27 +64,36 @@
 
 .footer-social-item{
     border-radius: 10px;
-    border: 1px solid var(--border);
+    border: 1px solid #fefefe99;
     width: 40px;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    transition: background-color 250ms ease-in-out;
 }
 
-.footer-social-item:hover{
-    background-color: var(--light-green);
+.footer-social-item:hover,
+.footer-social-item:focus{
+    border: white;
+}
+
+.footer-social-link{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    color: #fefefe99;
+    border-color: var(--border);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus{
+    color: var(--white);
+    border-color: white;
 }
 
 .footer-social-icon{
     fill: var(--white);
-    display: flex;
-}
-
-.footer-social-icon:hover {
-    fill: var(--dark-green);
 }
 
 .lower-text{
@@ -113,26 +122,6 @@
     gap: 18px;
 }
 
-.lowest-container{
-    margin-top: 20px;
-    border-top: 1px solid var(--light-green);
-}
-
-.webmaster{
-    color: var(--light-green);
-    text-align: center;
-    font-family: 'Epilogue';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: -0.28px;
-    padding-top: 20px;
-
-    @media screen and (max-width: 767px){
-        font-size: 12px;
-    }
-}
 
 @media screen and (max-width: 767px) {
     .footer {

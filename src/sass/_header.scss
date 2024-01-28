@@ -43,41 +43,41 @@
 
 
 .header-navigation-link{
-    color: var(--white);
+    color: #fefefe99;
     font-family: Epilogue;
     font-size: 9px;
     font-style: normal;
     font-weight: 400;
     line-height: 12px;
     text-transform: uppercase;
-
-    transition: transform 250ms ease-in-out;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-navigation-link:hover{
-    transform: scale(1.2);
+    color: rgba(254, 254, 254, 1);
+
 }
 
+
 .header-button{
-    color: var(--white);
+    color: #fefefe99;
     text-align: center;
     font-family: Epilogue;
     font-size: 9px;
     font-style: normal;
     font-weight: 400;
     line-height: 12px;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     padding: 18px 36px;
     border-radius: 8px;
     background-color: var(--dark-green);
     border: none;
-
-    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-button:hover{
-    background-color: var(--white);
-    color: var(--dark-green);
+.header-button:hover {
+    color: rgba(254, 254, 254, 1);
 }
 
 .hamburger-container{
